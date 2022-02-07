@@ -27,7 +27,7 @@ COMPILE_FLAGS = `root-config --cflags`
 
 # Targets:
 $(PROGRAM): $(PROGRAM).o
-	gfortran $(FORTRAN_FLAGS) $(PROGRAM).o $(LIBRARYLOC_FLAGS) -lmaid_xsection $(LIBRARY_FLAGS) -o $(PROGRAM)
+	gfortran $(FORTRAN_FLAGS) $(PROGRAM).o $(LIBRARYLOC_FLAGS) -lmaid_xsection07 $(LIBRARY_FLAGS) -o $(PROGRAM)
 
 $(PROGRAM).o: $(SOURCE)
 	g++ $(COMPILE_FLAGS) -c $(SOURCE) -o $(PROGRAM).o

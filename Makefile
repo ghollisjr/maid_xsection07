@@ -1,6 +1,6 @@
 # $Id: Makefile,v 1.12 2004/02/20 18:12:49 holtrop Exp $
 #
-CREATED_F=maid_xsection.F
+CREATED_F=maid_xsection07.F
 LIBNAMES  = $(MAIN_DIRECTORY)$(ADD_DEBUG) 
 LIBNAMES  +=clasutil$(ADD_DEBUG) fputil$(ADD_DEBUG) recutl$(ADD_DEBUG) \
     bos$(ADD_DEBUG) fpack$(ADD_DEBUG) online_dummy$(ADD_DEBUG) \

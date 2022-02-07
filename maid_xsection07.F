@@ -68,13 +68,10 @@ c     format strings
 c     PARSE ARGUMENTS
       nargs = command_argument_count()
       if(nargs.ne.nargs_total) then
- 10      write(*,*) "Usage: maid_xsection <beam_energy>",
-     +        " <model_opt> <channel_opt>",
+ 10      write(*,*) "Usage: maid_xsection07 <beam_energy>",
+     +        " <channel_opt>",
      +        " <helicity> <sigma_term>"
          write(*,*) ""
-         write(*,*) "model_opt: "
-         write(*,*) "1=AO, 2=daresbury, 3=hlee pi0,"
-         write(*,*) "4=MAID98, 5=MAID2000, 6=MAID2003"
          write(*,*) "channel_opt: (1=pi0, 2=pi-, 3=pi+)"
 c     write(*,*) "channel_opt (hadron charge):",
 c     +        "(0=e+n->e+p+pi-, 1=e+p->e+n+pi+)"
@@ -96,16 +93,15 @@ c     Read arguments
 c$$$  call getarg(2,buf)
 c$$$  read(buf,*) target_mass
 
+         model_opt=7
+         
          call getarg(2,buf)
-         read(buf,*) model_opt
-
-         call getarg(3,buf)
          read(buf,*) channel_opt
 
-         call getarg(4,buf)
+         call getarg(3,buf)
          read(buf,*) helicity
 
-         call getarg(5,buf)
+         call getarg(4,buf)
          read(buf,*) sigma_term
       endif
 
