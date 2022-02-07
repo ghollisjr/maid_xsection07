@@ -7,3 +7,7 @@ To see usage information, run without any arguments:
 maid_xsection07
 
 See example/for an example program that links to it.
+
+Example executable usage:
+
+echo '1.5 1.0 0 0' | maid_xsection07 2.035 2 0 0
