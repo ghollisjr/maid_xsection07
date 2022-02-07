@@ -25,7 +25,7 @@ c     Program arguments: beam_energy, model_opt, channel_opt, helicity,
 c     sigma_term
       integer nargs_total
       character * (100) buf
-      parameter (nargs_total=5)
+      parameter (nargs_total=4)
 
       integer nargs
       integer sigma_term
